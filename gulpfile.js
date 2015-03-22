@@ -5,6 +5,7 @@ var rename 			= require('gulp-rename');
 var uglify 			= require('gulp-uglify');
 var runSequence 	= require('run-sequence');
 var watch 			= require('gulp-watch');
+var sass 			= require('gulp-sass');
 
 /* tasks */
 gulp.task('devjs', function ()
@@ -32,9 +33,17 @@ gulp.task('depsDist', function ()
 		.pipe(gulp.dest('bin'));
 });
 
+gulp.task('sass', function ()
+{
+	return gulp.src(['src/css/styles.scss'])
+		.pipe(sass())
+		.pipe(gulp.dest('src/css'));
+});
+
 gulp.task('watch', function ()
 {
 	gulp.watch('src/js/*.js', ['devjs']);
+	gulp.watch('src/css/*.scss', ['sass']);
 });
 
 gulp.task('default', function (callback)
