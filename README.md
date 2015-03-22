@@ -26,3 +26,4 @@ Using node best practices and maintaining a minimal API surface, your build work
 1. [Getting Started with Gulp](https://www.youtube.com/watch?v=OwSySiu5yzs "Getting Started with Gulp")
 2. [Separate Tasks with Gulp](http://youtu.be/a8DTWIlD3nA "Separate Tasks with Gulp")
 3. [Gulp Watch](http://youtu.be/wQ30KcWzz3M "Gulp Watch")
+4. [Gulp, Sass and Watch](http://youtu.be/XIzpIvhAbLM "Gulp, Sass and Watch")
