@@ -27,3 +27,4 @@ Using node best practices and maintaining a minimal API surface, your build work
 2. [Separate Tasks with Gulp](http://youtu.be/a8DTWIlD3nA "Separate Tasks with Gulp")
 3. [Gulp Watch](http://youtu.be/wQ30KcWzz3M "Gulp Watch")
 4. [Gulp, Sass and Watch](http://youtu.be/XIzpIvhAbLM "Gulp, Sass and Watch")
+5. [Gulp BrowserSync](https://www.youtube.com/watch?v=2Z5F-i_YmsQ "Gulp Browser Sync")

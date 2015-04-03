@@ -8,15 +8,6 @@ var watch 			= require('gulp-watch');
 var sass 			= require('gulp-sass');
 var browserSync 	= require('browser-sync');
 
-gulp.task('browser-sync', function ()
-{
-	browserSync({
-		server: {
-			baseDir: 'src/'
-		}
-	});
-});
-
 /* tasks */
 gulp.task('devjs', function ()
 {
@@ -59,7 +50,6 @@ gulp.task('watch', function ()
 			baseDir: 'src/'
 		}
 	});
-	
 	gulp.watch('src/js/*.js', ['devjs']);
 	gulp.watch('src/css/*.scss', ['sass-watch']);
 });
