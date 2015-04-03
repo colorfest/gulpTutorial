@@ -6,6 +6,16 @@ var uglify 			= require('gulp-uglify');
 var runSequence 	= require('run-sequence');
 var watch 			= require('gulp-watch');
 var sass 			= require('gulp-sass');
+var browserSync 	= require('browser-sync');
+
+gulp.task('browser-sync', function ()
+{
+	browserSync({
+		server: {
+			baseDir: 'src/'
+		}
+	});
+});
 
 /* tasks */
 gulp.task('devjs', function ()
@@ -40,10 +50,18 @@ gulp.task('sass', function ()
 		.pipe(gulp.dest('src/css'));
 });
 
+gulp.task('sass-watch', ['sass'], browserSync.reload);
+
 gulp.task('watch', function ()
 {
+	browserSync({
+		server: {
+			baseDir: 'src/'
+		}
+	});
+	
 	gulp.watch('src/js/*.js', ['devjs']);
-	gulp.watch('src/css/*.scss', ['sass']);
+	gulp.watch('src/css/*.scss', ['sass-watch']);
 });
 
 gulp.task('default', function (callback)
