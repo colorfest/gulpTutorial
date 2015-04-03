@@ -1,6 +1,6 @@
 # Accio Code Tutorials: Gulp#
 
-***Updated: 2-6-14***
+***Updated: 4-3-14***
 
 This tutorial series for [AccioCode](https://www.youtube.com/user/CDPAdvertising "Accio Code on YouTube") is about all things Gulp. Similar to Grunt, Gulp has become increasingly popular for doing the same tasks that Grunt does, but in a more JavaScript friendly way.
 
