@@ -38,6 +38,7 @@ gulp.task('sass', function ()
 {
 	return gulp.src(['src/css/styles.scss'])
 		.pipe(sass())
+		.on('error', console.error.bind(console))
 		.pipe(gulp.dest('src/css'));
 });
 
